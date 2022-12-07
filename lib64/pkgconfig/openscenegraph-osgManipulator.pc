@@ -1,0 +1,14 @@
+# pkg-config source file
+
+prefix=/home/tony/sim/Packages/install-x64-linux-gcc-9.3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: openscenegraph-osgManipulator
+Description: Manipulator library for Openscenegraph
+Version: 3.2.2
+Requires: openscenegraph-osgUtil openscenegraph-osgGA openscenegraph-osg openthreads
+Conflicts:
+Libs: -L${libdir} -losgManipulator
+Cflags: -I${includedir}
